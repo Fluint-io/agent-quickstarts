@@ -1,0 +1,8 @@
+name = "post-call-follow-up-email"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Set non-secret config here. Secrets go in via `wrangler secret put`.
+# [vars]
+# GONG_BASE_URL = "https://api.gong.io"

@@ -1,0 +1,16 @@
+name = "multi-thread-nudge"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Runs every weekday at 14:00 UTC (≈ 7am PT / 10am ET).
+[triggers]
+crons = ["0 14 * * 1-5"]
+
+[vars]
+# Stages to watch. If empty, scans all late-stage deals.
+WATCHED_STAGE_IDS = "presentationscheduled,decisionmakerboughtin,contractsent"
+# Minimum days in stage before a single-threaded deal gets nudged.
+MIN_DAYS_IN_STAGE = "5"
+# Max stakeholders to draft per deal.
+MAX_DRAFTS_PER_DEAL = "3"

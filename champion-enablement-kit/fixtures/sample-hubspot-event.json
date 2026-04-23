@@ -1,0 +1,15 @@
+[
+  {
+    "eventId": 1,
+    "subscriptionId": 12345,
+    "portalId": 987654,
+    "appId": 1,
+    "occurredAt": 1714000000000,
+    "subscriptionType": "deal.propertyChange",
+    "attemptNumber": 0,
+    "objectId": 11111222223,
+    "propertyName": "dealstage",
+    "propertyValue": "decisionmakerboughtin",
+    "changeSource": "CRM_UI"
+  }
+]

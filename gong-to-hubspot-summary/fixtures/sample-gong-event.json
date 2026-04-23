@@ -1,0 +1,10 @@
+{
+  "eventType": "call_ended",
+  "callId": "7899307766428451212",
+  "title": "Acme Corp <> Fluint — discovery",
+  "ownerEmail": "jon@fluint.io",
+  "attendees": [
+    { "email": "jane.doe@acme.com", "name": "Jane Doe" },
+    { "email": "jon@fluint.io", "name": "Jon Crawley" }
+  ]
+}

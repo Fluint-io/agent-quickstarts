@@ -1,0 +1,14 @@
+name = "deal-risk-alerts-to-slack"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Runs nightly at 13:00 UTC (≈ 6am PT / 9am ET).
+[triggers]
+crons = ["0 13 * * *"]
+
+[vars]
+GOING_DARK_DAYS = "7"
+STALLED_STAGE_DAYS = "14"
+# Pipeline stages to scan. Comma-separated. Leave empty to scan all open stages.
+# ACTIVE_STAGE_IDS = "qualifiedtobuy,presentationscheduled,decisionmakerboughtin,contractsent"

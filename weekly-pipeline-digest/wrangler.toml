@@ -1,0 +1,14 @@
+name = "weekly-pipeline-digest"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Runs Monday at 13:00 UTC (≈ 6am PT / 9am ET).
+[triggers]
+crons = ["0 13 * * 1"]
+
+[vars]
+# Slack channel ID (not name) to post the digest to. e.g. "C0123456789".
+DIGEST_SLACK_CHANNEL = ""
+# How many days back to consider "this week" (default 7).
+WINDOW_DAYS = "7"

@@ -1,0 +1,11 @@
+name = "champion-enablement-kit"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Stage IDs that trigger the kit. When HubSpot fires a deal.propertyChange on
+# `dealstage`, we check if the new stage is in this list.
+TRIGGER_STAGE_IDS = "presentationscheduled,decisionmakerboughtin"
+# Google Drive folder ID to drop the generated kit into.
+DRIVE_FOLDER_ID = ""
